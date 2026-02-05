@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Story Creator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Dynamic Story Creator</h1>
+    <p>Stories unlock only with correct names and title</p>
+</header>
+
+<nav>
+    <ul>
+        <li onclick="showSection('home')">Home</li>
+        <li onclick="showSection('services')">Services</li>
+        <li onclick="showSection('about')">About Us</li>
+    </ul>
+</nav>
+
+<section id="home" class="active">
+    <h2>Enter Story Details</h2>
+    <form id="storyForm">
+        <label>Hero Name</label>
+        <select id="hero">
+            <option value="">Select Name</option>
+            <option>Jamiila</option>
+            <option>Faadumo</option>
+            <option>Mohamed</option>
+            <option>Ali</option>
+        </select>
+
+        <label>Friend Name</label>
+        <select id="sidekick">
+            <option value="">Select Name</option>
+            <option>Jamiila</option>
+            <option>Faadumo</option>
+            <option>Mohamed</option>
+            <option>Ali</option>
+        </select>
+
+        <label>Story Title</label>
+        <select id="mission">
+            <option value="">Select Story</option>
+            <option>java</option>
+            <option>orod yahan</option>
+        </select>
+
+        <label>Country or City</label>
+        <select id="place">
+            <option value="">Select Location</option>
+            <option>Somalia 🇸🇴</option>
+            <option>Mogadishu</option>
+        </select>
+
+        <button type="submit">Generate Story</button>
+    </form>
+
+    <h3>Your Story</h3>
+    <div id="storyOutput" class="story-box">Story will appear here...</div>
+    <button onclick="shareStory()">Share Story</button>
+</section>
+
+<section id="services">
+    <h2>Dynamic Story Creator</h2>
+    <p>
+        Wuxuu ka hadlayaa barnaamij sameeya sheekooyin si toos ah u isbeddelaya
+        iyadoo ku xiran xogta uu geliyo user-ku.
+    </p>
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p><strong>Name:</strong> Mohamed Abdirahmaan Mohamed</p>
+    <p><strong>Class:</strong> CM241</p>
+    <p><strong>ID:</strong> C5240001</p>
+    <p><strong>Number:</strong> 0682641871</p>
+</section>
+
+<footer>
+    <p>© CM241 C5240001 2026 Dynamic Story Creator Project</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
